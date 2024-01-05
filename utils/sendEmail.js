@@ -10,7 +10,9 @@ dotenv.config();
 
 const { AUTH_EMAIL, AUTH_PASSWORD, APP_URL } = process.env;
 let transporter = nodemailer.createTransport({
-  host: "smtp-mail.outlook.com",
+  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
   auth: {
     user: AUTH_EMAIL,
     pass: AUTH_PASSWORD,
