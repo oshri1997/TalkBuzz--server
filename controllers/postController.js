@@ -28,9 +28,6 @@ export const getPosts = async (req, res, next) => {
   try {
     const { userId } = req.body.user;
     const { search } = req.body;
-
-    console.log(`Search term: ${search}`);
-
     const user = await Users.findById(userId);
     const friends = user?.friends?.toString().split(",") || [];
     friends.push(userId);
