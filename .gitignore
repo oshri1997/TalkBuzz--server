@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependency directories
+pids/
+logs/
+results/
+build/
+
+# Optional: OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+
+# Output of 'npm run build'
+/dist/
